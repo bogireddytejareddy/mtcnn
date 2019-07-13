@@ -1,3 +1,4 @@
+from demo.test import get_detection
 from matplotlib.patches import Circle
 import matplotlib.pyplot as plt
 import random
@@ -7,13 +8,11 @@ import cv2
 
 img = cv2.imread("./test.jpg")
 im_array = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-dets = np.load('./bbox.npy')
+dets = get_detection()
 
 figure = pylab.figure()
 pylab.imshow(im_array)
 figure.suptitle('DFace Detector', fontsize=20)
-
-print (dets)
 
 for i in range(dets.shape[0]):
     bbox = dets[i, :4]
