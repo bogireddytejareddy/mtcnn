@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from utils.detector import network_loader, MTCNNDetector
 
-def test():
+def get_detection():
     pnet, rnet, onet = network_loader(p_model_path="./model_store/pnet_epoch_9.pt",
                                       r_model_path="./model_store/rnet_epoch_6.pt",
                                       o_model_path="./model_store/onet_epoch_3.pt")
