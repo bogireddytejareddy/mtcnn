@@ -12,5 +12,4 @@ if __name__ == '__main__':
     img = cv2.imread("./test.jpg")
     img_bg = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     bboxs = mtcnn_detector.detect_face(img)
-    print (bboxs)
     np.save('./bbox.npy', bboxs)
