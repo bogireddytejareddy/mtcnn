@@ -38,3 +38,12 @@ python prepare_data/onet_generate.py
 python prepare_data/combined_data_onet.py
 python training/train_o_net.py
 ```
+
+## Inference
+
+```Shell
+python visualize.py
+```
+
+### References
+Zhang, K., Zhang, Z., Li, Z., and Qiao, Y. (2016). Joint face detection and alignment using multitask cascaded convolutional networks. IEEE Signal Processing Letters, 23(10):1499–1503.
